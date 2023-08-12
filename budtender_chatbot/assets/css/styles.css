@@ -1,0 +1,60 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+/* Chatbot UI Styles */
+#chatbot_ui {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
+
+/* Speak to Text and Text to Speech Buttons */
+#speak_to_text_button, #text_to_speech_button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px 0;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#speak_to_text_button:hover, #text_to_speech_button:hover {
+    background-color: #45a049;
+}
+
+/* Strain Info Display */
+#strain_info_display {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #e0ffe0;
+    border-radius: 10px;
+}
+
+/* Mobile First Styles */
+@media only screen and (max-width: 600px) {
+    body {
+        font-size: 16px;
+    }
+
+    #chatbot_ui {
+        padding: 10px;
+    }
+
+    #speak_to_text_button, #text_to_speech_button {
+        padding: 5px 10px;
+    }
+
+    #strain_info_display {
+        padding: 10px;
+    }
+}

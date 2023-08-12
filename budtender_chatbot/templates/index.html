@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budtender Chatbot</title>
+    <link rel="stylesheet" href="/assets/css/styles.css">
+</head>
+<body>
+    <div id="chatbot_ui">
+        <h1>Welcome to Budtender Chatbot</h1>
+        <p>Meet our cute, flirty yet professional 25-year-old hippie chick who is super knowledgeable about cannabis strains.</p>
+        <button onclick="initiate_chat()">Start Chat</button>
+        <div id="chat_area">
+            <div id="chat_messages"></div>
+            <div id="user_input_area">
+                <input type="text" id="user_message" placeholder="Type your message here...">
+                <button id="speak_to_text_button">Speak to Text</button>
+                <button id="text_to_speech_button">Text to Speech</button>
+                <button onclick="send_message()">Send</button>
+            </div>
+        </div>
+        <div id="strain_info_display"></div>
+    </div>
+    <script src="/assets/js/scripts.js"></script>
+</body>
+</html>
