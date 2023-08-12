@@ -1,33 +1,17 @@
-Shared Dependencies:
+1. "webapp" - This is the main module that all files are part of. It's the root directory for the application and is shared across all files.
 
-1. Variables:
-   - `gpt4_api_key`: The API key for GPT-4.
-   - `cannabis_api_key`: The API key for the Cannabis API.
-   - `user_query`: The user's input to the chatbot.
-   - `strain_info`: Information about the cannabis strain.
-   - `chat_response`: The chatbot's response to the user.
+2. "app" - This is the main application object that is likely defined in "webapp/app.py" and used in "webapp/tests/test_app.py" for testing purposes.
 
-2. Data Schemas:
-   - `User`: Contains user information.
-   - `Strain`: Contains information about the cannabis strain.
-   - `Chat`: Contains information about the chat session.
+3. "test_app" - This is the main testing function or class that is defined in "webapp/tests/test_app.py". It may be used in "webapp/app.py" to run tests.
 
-3. DOM Element IDs:
-   - `chatbot_ui`: The chatbot user interface.
-   - `speak_to_text_button`: The button for the speak-to-text feature.
-   - `text_to_speech_button`: The button for the text-to-speech feature.
-   - `strain_info_display`: The area where strain information is displayed.
+4. "README.md" - This file likely contains instructions on how to start the webapp, which would be relevant to both "webapp/app.py" (which starts the app) and "webapp/tests/test_app.py" (which tests the app).
 
-4. Message Names:
-   - `user_message`: The user's message to the chatbot.
-   - `chatbot_message`: The chatbot's message to the user.
+5. "start_webapp" - This could be a function defined in "webapp/app.py" that is used to start the webapp. It would be referenced in "webapp/README.md" in the instructions for starting the app.
 
-5. Function Names:
-   - `get_strain_info`: Fetches information about the cannabis strain.
-   - `generate_chat_response`: Generates the chatbot's response.
-   - `speak_to_text`: Converts spoken input to text.
-   - `text_to_speech`: Converts text input to speech.
-   - `display_strain_info`: Displays information about the cannabis strain.
-   - `initiate_chat`: Initiates the chat session.
-   - `end_chat`: Ends the chat session.
-   - `marketing_opportunities`: Handles marketing opportunities within the app.
+6. "correct_errors" - This could be a function defined in "webapp/app.py" that is used to correct any mistakes in the webapp. It would be tested in "webapp/tests/test_app.py".
+
+7. "DOM elements" - If the webapp uses JavaScript, there may be shared id names of DOM elements that JavaScript functions use. These would be defined in the HTML templates and used in both "webapp/app.py" and "webapp/tests/test_app.py".
+
+8. "Message names" - If the webapp uses messaging (e.g., for error reporting or user notifications), there may be shared message names. These would be defined in "webapp/app.py" and used in both "webapp/tests/test_app.py" and "webapp/README.md".
+
+9. "Data schemas" - If the webapp uses a database, there may be shared data schemas. These would be defined in "webapp/app.py" and used in "webapp/tests/test_app.py" for testing database interactions.
