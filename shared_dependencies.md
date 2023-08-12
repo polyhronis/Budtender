@@ -1,33 +1,21 @@
-Shared Dependencies:
+The shared dependencies between the files we are generating are:
 
-1. Variables:
-   - `gpt4_api_key`: The API key for GPT-4.
-   - `cannabis_api_key`: The API key for the Cannabis API.
-   - `user_query`: The user's input to the chatbot.
-   - `strain_info`: Information about the cannabis strain.
-   - `chat_response`: The chatbot's response to the user.
+1. **Next.js**: This is the main framework used for building the application. It is used in all the files for server-side rendering and routing.
 
-2. Data Schemas:
-   - `User`: Contains user information.
-   - `Strain`: Contains information about the cannabis strain.
-   - `Chat`: Contains information about the chat session.
+2. **React**: Next.js is built on top of React, so React is a shared dependency across all the files. It is used to create components and manage the application's state.
 
-3. DOM Element IDs:
-   - `chatbot_ui`: The chatbot user interface.
-   - `speak_to_text_button`: The button for the speak-to-text feature.
-   - `text_to_speech_button`: The button for the text-to-speech feature.
-   - `strain_info_display`: The area where strain information is displayed.
+3. **TypeScript**: TypeScript is used in all the files for type checking and improved developer experience. It is used to define types for variables, function parameters, and return values.
 
-4. Message Names:
-   - `user_message`: The user's message to the chatbot.
-   - `chatbot_message`: The chatbot's message to the user.
+4. **React-DOM**: This is used in all the files to render React components to the DOM.
 
-5. Function Names:
-   - `get_strain_info`: Fetches information about the cannabis strain.
-   - `generate_chat_response`: Generates the chatbot's response.
-   - `speak_to_text`: Converts spoken input to text.
-   - `text_to_speech`: Converts text input to speech.
-   - `display_strain_info`: Displays information about the cannabis strain.
-   - `initiate_chat`: Initiates the chat session.
-   - `end_chat`: Ends the chat session.
-   - `marketing_opportunities`: Handles marketing opportunities within the app.
+5. **Document**: This is a Next.js specific component that is used to augment the application's HTML structure. It is used in the `_document.tsx` file.
+
+6. **App**: This is another Next.js specific component that is used to initialize pages. It is used in the `_app.tsx` file.
+
+7. **CSS**: The `globals.css` file contains global styles that are shared across all the pages of the application.
+
+8. **Public Assets**: The `favicon.ico` and `vercel.svg` files in the public directory are assets that can be used across the application.
+
+9. **Package.json**: This file contains the list of dependencies and scripts for the application. It is shared across all the files as it determines the packages that are available for use in the application.
+
+10. **tsconfig.json**: This file contains the configuration for TypeScript. It is shared across all the files as it determines the rules for TypeScript compilation.
