@@ -1,0 +1,57 @@
+```css
+body {
+    background-color: #F5F5DC;
+    font-family: Arial, sans-serif;
+}
+
+#chatContainer {
+    width: 80%;
+    margin: auto;
+    border: 1px solid #8B4513;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #FFF8DC;
+    height: 500px;
+    overflow-y: auto;
+}
+
+#userInput {
+    width: 70%;
+    padding: 10px;
+    border: 1px solid #8B4513;
+    border-radius: 5px;
+}
+
+#sendButton, #voiceButton {
+    background-color: #8B4513;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+#sendButton:hover, #voiceButton:hover {
+    background-color: #A0522D;
+}
+
+#recommendationContainer {
+    width: 80%;
+    margin: auto;
+    border: 1px solid #8B4513;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #FFF8DC;
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 600px) {
+    #chatContainer, #recommendationContainer {
+        width: 95%;
+    }
+
+    #userInput {
+        width: 50%;
+    }
+}
+```
