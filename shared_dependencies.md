@@ -1,33 +1,32 @@
 Shared Dependencies:
 
-1. Variables:
-   - `gpt4_api_key`: The API key for GPT-4.
-   - `cannabis_api_key`: The API key for the Cannabis API.
-   - `user_query`: The user's input to the chatbot.
-   - `strain_info`: Information about the cannabis strain.
-   - `chat_response`: The chatbot's response to the user.
+1. **Exported Variables**: 
+   - `userPreferences`: Object to store user's preferences and needs.
+   - `strainData`: Object to store data fetched from the Strain API.
+   - `recommendations`: Array to store personalized strain recommendations.
 
-2. Data Schemas:
-   - `User`: Contains user information.
-   - `Strain`: Contains information about the cannabis strain.
-   - `Chat`: Contains information about the chat session.
+2. **Data Schemas**: 
+   - `UserPreferencesSchema`: Schema for user's preferences and needs.
+   - `StrainDataSchema`: Schema for data fetched from the Strain API.
+   - `RecommendationsSchema`: Schema for personalized strain recommendations.
 
-3. DOM Element IDs:
-   - `chatbot_ui`: The chatbot user interface.
-   - `speak_to_text_button`: The button for the speak-to-text feature.
-   - `text_to_speech_button`: The button for the text-to-speech feature.
-   - `strain_info_display`: The area where strain information is displayed.
+3. **DOM Element IDs**: 
+   - `chatContainer`: The main container for the chat interface.
+   - `userInput`: Text input field for user's responses.
+   - `sendButton`: Button to send user's input.
+   - `voiceButton`: Button to enable voice interaction.
+   - `recommendationContainer`: Container to display strain recommendations.
 
-4. Message Names:
-   - `user_message`: The user's message to the chatbot.
-   - `chatbot_message`: The chatbot's message to the user.
+4. **Message Names**: 
+   - `UserMessage`: Message sent by the user.
+   - `BotMessage`: Message sent by the bot.
+   - `RecommendationMessage`: Message containing strain recommendations.
 
-5. Function Names:
-   - `get_strain_info`: Fetches information about the cannabis strain.
-   - `generate_chat_response`: Generates the chatbot's response.
-   - `speak_to_text`: Converts spoken input to text.
-   - `text_to_speech`: Converts text input to speech.
-   - `display_strain_info`: Displays information about the cannabis strain.
-   - `initiate_chat`: Initiates the chat session.
-   - `end_chat`: Ends the chat session.
-   - `marketing_opportunities`: Handles marketing opportunities within the app.
+5. **Function Names**: 
+   - `fetchStrainData()`: Function to fetch data from the Strain API.
+   - `generateRecommendations()`: Function to generate personalized strain recommendations.
+   - `processUserInput()`: Function to process user's input and update `userPreferences`.
+   - `sendUserMessage()`: Function to send user's message and update the chat interface.
+   - `sendBotMessage()`: Function to send bot's message and update the chat interface.
+   - `enableVoiceInteraction()`: Function to enable voice interaction.
+   - `updateUI()`: Function to update the UI based on user's interaction and bot's responses.
